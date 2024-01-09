@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n,lsb,msb;
+	cin>>n;
+	for(int i=0;i<32;i++){
+	    if((n&(1<<i))){
+	        msb=i;
+	    }
+	}
+	cout<<msb<<" "<<(n&1);
+}
